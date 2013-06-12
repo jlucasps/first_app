@@ -6,17 +6,24 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body>
 
-  <div class='row-fluid'>
-    <div class='span3'>
-      <%= yield :sidebar %>
-    </div>
-    <div class='span9'>
-      <%= yield %>
-    </div>
-  </div>
+    <%= render :partial => 'shared/menu_top' %>
 
-</body>
+    <div class="container-fluid">
+    
+      <div class="row-fluid">
+
+        <%= yield :sidebar %>
+
+        <%= yield %>
+
+      </div>
+
+      <%= render :partial => 'shared/footer' %>
+
+    </div>
+
+  </body>
 </html>
 
