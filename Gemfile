@@ -11,8 +11,11 @@ group :development do
 
 end
 
-
 group :test do
+
+  # Makes tests easy on the fingers and the eyes
+  # https://github.com/thoughtbot/shoulda
+  gem 'shoulda'
 
   # Rspec-2 for Rails-3
   # https://github.com/rspec/rspec-rails
@@ -23,7 +26,6 @@ group :test do
   gem 'capybara'
 
 end
-
 
 group :production do
 
