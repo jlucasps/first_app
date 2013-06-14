@@ -16,6 +16,8 @@ describe User do
     user.save.should be_false
   end
     
+
+    
   it "fail to create a user when email is blank" do
     user = User.new(:name => "João Lucas", :age => 24)
     user.save.should be_false
