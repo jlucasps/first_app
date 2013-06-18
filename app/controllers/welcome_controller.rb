@@ -16,5 +16,10 @@ class WelcomeController < ApplicationController
   
   end
 
+  def change_locale
+    I18n.locale = params[:locale]
+    redirect_to index_path(:locale => params[:locale])
+  end
+
 
 end

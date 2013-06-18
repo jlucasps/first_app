@@ -5,4 +5,9 @@ FirstApp::Application.routes.draw do
   match 'contact' => 'welcome#contact', :as => :contact
 
   match 'black' => 'welcome#black', :via => :get, :as => :black
+
+  resources :users
+
+  match 'change_locale/:locale' => 'welcome#change_locale', :as => :change_locale
+
 end

@@ -25,6 +25,10 @@ group :test do
   # https://github.com/jnicklas/capybara
   gem 'capybara'
 
+  # Code coverage for Ruby 1.9+ with a powerful configuration library and automatic merging of coverage across test suites
+  # https://github.com/colszowka/simplecov
+  gem 'simplecov'
+
 end
 
 group :production do
@@ -53,6 +57,7 @@ group :assets do
   # https://github.com/lautis/uglifier
   # Ruby wrapper for UglifyJS JavaScript compressor.
   gem 'uglifier', '>= 1.0.3'
+
 
 end
 
