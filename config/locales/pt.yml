@@ -11,7 +11,12 @@ pt:
   save: Salvar
   saved_successfully: Salvo com sucesso
   error_while_saving: Erro ao salvar
-
+  delete: Deletar
+  edit: Editar
+  error_while_deleting: Erro ao deletar
+  error_while_updating: Erro ao atualizar
+  updated_successfully: Atualizado com sucesso
+  
   time:
     formats:
       default: "%A, %d de %B de %Y, %H:%M hs"

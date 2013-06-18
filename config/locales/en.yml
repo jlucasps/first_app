@@ -11,3 +11,9 @@ en:
   save: Save
   saved_successfully: Saved successfully
   error_while_saving: Error while saving
+  delete: Delete
+  edit: Edit
+  error_while_deleting: Error while deleting
+  error_while_updating: Error while updating
+  updated_successfully: Updated successfully
+  

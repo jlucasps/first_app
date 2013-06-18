@@ -9,7 +9,7 @@ class Bill < ActiveRecord::Base
   validates :value, :presence => true
 
   # Associations
-  belongs_to :user, :dependent => :destroy
+  belongs_to :user
 
   # Scopes
   default_scope order("bills.date DESC")
