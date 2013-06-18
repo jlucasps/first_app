@@ -8,6 +8,4 @@ FirstApp::Application.routes.draw do
 
   resources :users
 
-  match 'change_locale/:locale' => 'welcome#change_locale', :as => :change_locale
-
 end

@@ -4,7 +4,7 @@
     <% @users.each do |user| %>
       <tr>
         <td>
-          <%= "#{user.name} (#{user.email}), #{user.age} anos" %>
+          <%= link_to "#{user.name} (#{user.email}), #{user.age} anos", user %>
           <%= link_to "<i class='icon-edit'></i>".html_safe, 
               edit_user_path(user), :class => "btn btn-mini" %>
           
