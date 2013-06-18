@@ -6,6 +6,9 @@ FirstApp::Application.routes.draw do
 
   match 'black' => 'welcome#black', :via => :get, :as => :black
 
-  resources :users
+  resources :users do 
+    resources :bills
+  end
+
 
 end

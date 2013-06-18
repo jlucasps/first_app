@@ -5,4 +5,23 @@ pt:
   hello: "Olá, Mundo"
   about_us: Sobre nós
   new_user: Novo usuário
+  bills: Contas
+  no_bill_registered_to_this_user: Não há contas cadastradas para este usuário
+  new_bill: Nova conta
+  save: Salvar
+  saved_successfully: Salvo com sucesso
+  error_while_saving: Erro ao salvar
+
+  time:
+    formats:
+      default: "%A, %d de %B de %Y, %H:%M hs"
+      time: "%H:%M hs"
+      short: "%d/%m, %H:%M hs"
+      long: "%A, %d de %B de %Y, %H:%M hs"
+      only_second: "%S"
+      datetime:
+        formats:
+          default: "%Y-%m-%dT%H:%M:%S%Z"
+    am: ''
+    pm: ''
 

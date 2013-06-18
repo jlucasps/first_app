@@ -5,3 +5,9 @@ en:
   hello: "Hello world"
   about_us: About us
   new_user: New user
+  bills: Bills
+  no_bill_registered_to_this_user: No bills registered to thid user
+  new_bill: New bill
+  save: Save
+  saved_successfully: Saved successfully
+  error_while_saving: Error while saving

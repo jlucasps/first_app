@@ -1,0 +1,16 @@
+<hr>
+<h4><%= t('bills') %></h4>
+<% if bills.any? %>
+  <% bills.each do |bill| %>
+    <div class='well well-small'>
+      <h4><%= bill.name %></h4>
+      <%= bill.description %>
+      <h5><%= l(bill.date, :forma => :long) %></h5>
+      <h3><%= bill.value.round(2) %></h3>
+    </div>
+  <% end %>
+<% else %>
+  <div class='alert'>
+    <%= t('no_bill_registered_to_this_user') %>
+  </div>
+<% end %>
