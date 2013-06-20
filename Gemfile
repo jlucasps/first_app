@@ -3,6 +3,14 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 
+# https://github.com/plataformatec/devise
+# Flexible authentication solution for Rails with Warden
+gem 'devise'
+
+# https://github.com/sj26/mailcatcher
+# Catches mail and serves it through a dream. 
+gem 'mailcatcher'
+
 group :development do
 
   # Ruby bindings for the SQLite3 embedded database 

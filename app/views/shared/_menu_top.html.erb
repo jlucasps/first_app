@@ -9,7 +9,11 @@
       <%= link_to "Project name", index_path, :class => "brand" %>
       <div class="nav-collapse collapse">
         <p class="navbar-text pull-right">
-          Logged in as <a href="#" class="navbar-link">Username</a>
+          <% if user_signed_in? %>
+            Logged in as  <%= link_to current_user.email edit_user_registration_path(current_user), :class => "navbar-link" %>
+          <% else %>
+            <%= link_to "login", new_user_session_path, :class => "btn" %>
+          <% end %>
         </p>
         <ul class="nav">
           <li class="active"><%= link_to "Home", index_path %></li>

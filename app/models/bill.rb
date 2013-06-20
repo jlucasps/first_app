@@ -19,5 +19,5 @@ class Bill < ActiveRecord::Base
   }
 
   # Públic methods
-  
+
 end

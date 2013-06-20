@@ -8,22 +8,17 @@
 </head>
   <body>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= render :partial => 'shared/menu_top' %>
-
     <div class="container-fluid">
-    
       <div class="row-fluid">
-
         <%= yield :sidebar %>
-
         <%= yield %>
-
       </div>
-
       <%= render :partial => 'shared/footer' %>
-
     </div>
-
   </body>
 </html>
 
