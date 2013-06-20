@@ -4,7 +4,7 @@ describe ".index", :type => :feature do
 
   it "access index page" do
     visit index_path
-    page.should have_content("Hello, world!")
+    page.should have_content("Link")
   end
 
   it "access public pages" do
