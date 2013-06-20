@@ -37,6 +37,10 @@ group :test do
   # https://github.com/colszowka/simplecov
   gem 'simplecov'
 
+  # Factory_girl is a fixtures replacement with a straightforward definition syntax
+  # https://github.com/thoughtbot/factory_girl_rails
+  gem 'factory_girl_rails', "~> 4.0"
+  
 end
 
 group :production do
