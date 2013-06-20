@@ -8,7 +8,7 @@ describe UsersController do
 
   describe "GET index" do
     it "assigns @users" do
-      saved_users = [FactoryGirl.find_or_create(:user_bart)]
+      saved_users = [FactoryGirl.find_or_create(:user_bart), FactoryGirl.find_or_create(:user_lisa)]
 
       get :index
       assigns(:users).should eq(saved_users)
