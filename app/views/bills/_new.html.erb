@@ -1,5 +1,9 @@
 <hr>
-<h4><%= t('new_bill') %></h4>
+<% if bill.persisted? %>
+  <h4><%= t('edit_bill') %></h4>
+<% else %>
+  <h4><%= t('new_bill') %></h4>
+<% end %>
 
 <%= form_for([user, bill], :remote => true) do |f| %>
   <%= render :partial => 'shared/error_messages' , :locals => {:resource => bill} %>
