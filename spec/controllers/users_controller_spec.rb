@@ -15,4 +15,26 @@ describe UsersController do
     end
   end
 
+  describe "GET new" do
+    it "access new action" do
+      get :new
+      assigns(:user).should be_a_new(User)  
+    end
+  end
+
+
+  describe "DELETE" do
+    it "deletes an user" do
+      user_lisa = FactoryGirl.create(:user_lisa)
+      expect {
+        delete :destroy, :id => user_lisa.id
+      }.to change(User, :count).by(-1)
+
+    end
+
+  end
+
+
+
+
 end

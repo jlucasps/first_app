@@ -12,5 +12,6 @@ FirstApp::Application.routes.draw do
     resources :bills
   end
 
-
+  match 'new_bill' => 'bills#new', :as => :new_bill
+  match 'create_bill' => 'bills#create_bill', :as => :create_bill
 end

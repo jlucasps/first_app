@@ -1,7 +1,10 @@
 
 <div class="span9">
-  <% label = "<i class='icon-user'></i>&nbsp;Usuários".html_safe %>
+  <% label = "<i class='icon-user'></i>&nbsp;#{t('users')}".html_safe %>
   <%= link_to label, users_path, :class => "btn btn-large" %>
+
+  <%= link_to t('new_bill'), new_bill_path, :class => "btn btn-large btn-success" %>
+
 </div>
 
 <%= content_for :sidebar do %>
